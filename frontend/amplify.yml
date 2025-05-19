@@ -3,15 +3,16 @@ frontend:
   phases:
     preBuild:
       commands:
+        - cd frontend
         - npm ci
     build:
       commands:
-        - npm run build
+        - npm run build    # runs "vite build" per your package.json
   artifacts:
-    # this must match the “Build output directory” field in the console
-    baseDirectory: build
+    # now point at frontend/dist
+    baseDirectory: frontend/dist
     files:
       - '**/*'
   cache:
     paths:
-      - node_modules/**/*
+      - frontend/node_modules/**/*
