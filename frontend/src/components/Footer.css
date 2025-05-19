@@ -1,0 +1,79 @@
+.footer {
+  width: 100vw;
+  background: linear-gradient(90deg, #0096FF, #005BEA); /* Updated gradient */
+  color: white;
+  padding: 40px 0 20px 0;
+  margin: 0;
+  box-shadow: 0 -8px 20px rgba(0, 91, 234, 0.25); /* Soft glow */
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-section h2,
+.footer-section h4 {
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.footer-section p,
+.footer-section a {
+  font-size: 14px;
+  color: #f0f0f0;
+  line-height: 1.8;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  color: #f0f0f0;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.3); /* Glow on hover */
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 14px;
+  color: #e0e0e0;
+}
+.footer-button {
+  background: linear-gradient(90deg, #0096FF, #005BEA);
+  color: white;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0, 91, 234, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.footer-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(0, 91, 234, 0.3);
+}
