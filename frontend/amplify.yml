@@ -4,14 +4,16 @@ frontend:
     preBuild:
       commands:
         - cd frontend
-        - npm install      # <— use install instead of ci
+        - npm ci
     build:
       commands:
-        - npm run build
+        - npm run build    # runs "vite build" per your package.json
   artifacts:
+    # now point at frontend/dist
     baseDirectory: frontend/dist
     files:
       - '**/*'
   cache:
     paths:
       - frontend/node_modules/**/*
+          # now point at frontend/dist
